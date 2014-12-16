@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* CSS Document *//* Skyler Lyytinen IMD Algonquin College 2014 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**********************css reset above****************/
+
+
+/********************************************************
+			pure css3 navigation slide menu
+********************************************************/
+
+.navigation {
+  	width: 100%;
+  	height: 100%;
+  	position: fixed;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	z-index: 0;
+  	list-style: none;
+  	background: #000000 repeat right url(../img/images/pattern.png);
+}
+
+.nav-item {
+  	width: 200px;
+  	border-top: 0.1px solid #000000;
+  	border-bottom: 0.1px solid #000000;
+}
+
+.nav-item a {
+  	display: inline-block;
+  	padding: 1em;
+  	width: 100%;
+  	border-bottom: 0px transparent;
+  	color: #bde0ff;
+  	font-size: 1.5em;
+  	text-decoration: none;
+  	transition: 0.25s ease-in-out;
+  	-webkit-transition: 0.25s ease-in-out;
+  	-moz-transition: 0.25s ease-in-out;
+  	-o-transition: 0.25s ease-in-out;
+}
+
+.nav-item:hover {
+	width: 200px;
+	border-top: 0.1px solid #000000;
+  	border-bottom: 0.1px solid #000000;
+  	-webkit-box-shadow: 0px 7px 13px 0px rgba(0,136,255,1);
+	-moz-box-shadow: 0px 7px 13px 0px rgba(0,136,255,1);
+	box-shadow: 0px 7px 13px 0px rgba(0,136,255,1);
+}
+
+.nav-item a:hover {
+  	color: #ffffff;
+  	background: linear-gradient(0deg, rgba(0,0,0,0) 25%,rgba(0,136,255,1) 100%);
+  	background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 25%,rgba(0,136,255,1) 100%);
+  	background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 25%,rgba(0,136,255,1) 100%);
+  	-ms-transition: color 0.25s ease, width 0.2s ease, background 0.2s ease-in-out;
+	-o-transition: color 0.25s ease, width 0.2s ease, background 0.2s ease-in-out;
+	-moz-transition: color 0.25s ease, width 0.2s ease, background 0.2s ease-in-out;
+	-webkit-transition: color 0.25s ease, width 0.2s ease, background 0.2s ease-in-out;
+  	transition: color 0.25s ease, width 0.5s ease, background 0.5s ease-in-out;
+}
+
+.nav-item .on {
+	background-image: url(sqpurple.gif);
+    background-repeat: no-repeat;
+    background-position: right; 
+    padding-right: 15px; 
+	border-top: 0.1px solid #000000;
+  	border-bottom: 0.1px solid #000000;
+  	-webkit-box-shadow: 0px 7px 13px 0px rgba(0,136,255,1);
+	-moz-box-shadow: 0px 7px 13px 0px rgba(0,136,255,1);
+	box-shadow: 0px 7px 13px 0px rgba(0,136,255,1);
+	color: #ffffff;
+  	background: linear-gradient(0deg, rgba(0,0,0,0) 25%,rgba(0,136,255,1) 100%);
+  	background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 25%,rgba(0,136,255,1) 100%);
+  	background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 25%,rgba(0,136,255,1) 100%);
+  	-ms-transition: color 0.25s ease, width 0.2s ease, background 0.2s ease-in-out;
+	-o-transition: color 0.25s ease, width 0.2s ease, background 0.2s ease-in-out;
+	-moz-transition: color 0.25s ease, width 0.2s ease, background 0.2s ease-in-out;
+	-webkit-transition: color 0.25s ease, width 0.2s ease, background 0.2s ease-in-out;
+  	transition: color 0.25s ease, width 0.5s ease, background 0.5s ease-in-out;
+}
+
+.site-wrap {
+  	height: 100%;
+  	width: 100%;
+  	background-color: #000000; 
+  	position: fixed;
+  	top: 0;
+  	bottom: 100%;
+  	left: 0;
+  	overflow: scroll !important;
+  	z-index: 1;
+}
+
+.nav-trigger {
+  	position: fixed;
+  	clip: rect(0, 0, 0, 0);
+  	transition: left 0.2s ease-in-out;
+  	-webkit-transition: left 0.2s ease-in-out;
+  	-ms-transition: left 0.2s ease-in-out;
+  	-moz-transition: left 0.2s ease-in-out;
+  	-o-transition: left 0.2s ease-in-out;
+}
+
+label[for="nav-trigger"] {
+  	position: fixed;
+  	left: 10px; 
+  	top: 10px;
+  	z-index: 2;
+  	height: 34px;
+  	background-color: transparent;
+  	width: 43px;
+  	background-repeat: no-repeat;
+  	background-image: url(../img/images/menubutton.png);
+}
+
+.nav-trigger + label, .site-wrap {
+  	transition: left 0.2s ease-in-out;
+  	-webkit-transition: left 0.2s ease-in-out;
+  	-ms-transition: left 0.2s ease-in-out;
+  	-moz-transition: left 0.2s ease-in-out;
+  	-o-transition: left 0.2s ease-in-out;
+}
+
+.nav-trigger:checked + label {
+	left: 200px;
+  	width: 100%;
+  	height: 100%;
+  	overflow-y: scroll !important;
+  	background-repeat: no-repeat;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  	left: 200px;
+ 	background: #000000;
+  	height: 100%;
+  	width: 100%;
+  	position: relative;
+  	overflow: scroll !important;
+  	z-index: 1;
+  	-o-box-shadow: -6px 0px 5px 2px rgba(0,0,0,0.75);
+	-ms-box-shadow: -6px 0px 5px 2px rgba(0,0,0,0.75);
+	-webkit-box-shadow: -6px 0px 5px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -6px 0px 5px 2px rgba(0,0,0,0.75);
+	box-shadow: -6px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+code {
+	background: #dddddd;
+}
+
+/* Micro reset */
+*,*:before{
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing:	border-box;
+	margin:0;
+	padding:0;
+}
+
+*,*:after{
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing:	border-box;
+	margin:0;
+	padding:0;
+	overflow-y: scroll !important; 
+	/*****************************
+	> 2 days of troubleshooting this menu. 
+	It's a overflow party! All done with experimental css3/html5
+	Still can't scroll with menu open on all devices. 
+	Will keep for records and sort it out later.
+	********************************/
+	overflow-y: hidden !important;
+	-ms-overflow-style: none;
+	/****fixes iphone scrolling***/
+	-webkit-overflow-scrolling: touch;
+}
